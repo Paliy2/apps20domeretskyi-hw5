@@ -2,6 +2,8 @@ package ua.edu.ucu.stream;
 
 import ua.edu.ucu.function.*;
 
+import java.util.Collection;
+
 public interface IntStream {
 
     Double average();
@@ -9,7 +11,7 @@ public interface IntStream {
     Integer max();
 
     Integer min();
-    
+
     IntStream flatMap(IntToIntStreamFunction func);
 
     long count();
