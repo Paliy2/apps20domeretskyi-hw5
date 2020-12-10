@@ -12,7 +12,6 @@ import ua.edu.ucu.iterators.FlatMapIterator;
 import ua.edu.ucu.iterators.MapIterator;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 
 public class AsIntStream implements IntStream {
@@ -56,7 +55,9 @@ public class AsIntStream implements IntStream {
         int max = Integer.MIN_VALUE;
         do {
             int next = stream.next();
-            if (next > max) max = next;
+            if (next > max) {
+                max = next;
+            }
         } while (stream.hasNext());
         return max;
     }
@@ -67,7 +68,9 @@ public class AsIntStream implements IntStream {
         int min = Integer.MAX_VALUE;
         do {
             int next = stream.next();
-            if (next < min) min = next;
+            if (next < min) {
+                min = next;
+            }
         } while (stream.hasNext());
         return min;
     }

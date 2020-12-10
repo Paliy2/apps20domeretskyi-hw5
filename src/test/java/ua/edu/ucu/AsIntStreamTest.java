@@ -1,6 +1,6 @@
 package ua.edu.ucu;
 
-import org.junit.Test;
+import org.junit .Test;
 import org.junit.Before;
 import ua.edu.ucu.stream.AsIntStream;
 import ua.edu.ucu.stream.IntStream;

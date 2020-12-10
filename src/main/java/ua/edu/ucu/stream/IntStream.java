@@ -2,8 +2,6 @@ package ua.edu.ucu.stream;
 
 import ua.edu.ucu.function.*;
 
-import java.util.Collection;
-
 public interface IntStream {
 
     Double average();
